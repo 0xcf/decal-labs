@@ -1,6 +1,6 @@
 #!/bin/bash
 
-PHONEBOOK_ENTRIES=".bash_phonebook_entries"
+PHONEBOOK_ENTRIES="bash_phonebook_entries"
 
 
 if [ "$#" -lt 1 ]; then

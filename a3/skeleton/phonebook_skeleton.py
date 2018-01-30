@@ -3,7 +3,7 @@
 import sys
 import os
 
-PHONEBOOK_ENTRIES = ".python_phonebook_entries"
+PHONEBOOK_ENTRIES = "python_phonebook_entries"
 
 
 def main():
