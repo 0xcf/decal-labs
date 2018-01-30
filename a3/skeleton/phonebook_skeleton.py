@@ -21,11 +21,17 @@ def main():
             # YOUR CODE HERE #
 
     elif sys.argv[1] == "remove":
-        name = " ".join(sys.argv[2:4])
+        name = " ".join(sys.argv[2:])
         # YOUR CODE HERE #
 
     elif sys.argv[1] == "clear":
         # YOUR CODE HERE #
+
+    else:
+        name = " ".join(sys.argv[1:])
+        with open(PHONEBOOK_ENTRIES, 'r') as f:
+            lookup = "".join(filter(lambda line: name in line, f.readlines()))
+            # YOUR CODE HERE #
 
 
 if __name__ == "__main__":
