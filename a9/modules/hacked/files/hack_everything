@@ -1,0 +1,5 @@
+#!/bin/bash
+
+jp2a $HOME/pwned.jpg | lolcat
+
+figlet "doot doot" | lolcat
