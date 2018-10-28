@@ -20,4 +20,4 @@ sudo chmod 777 file9.txt
 sudo chown nobody privkey
 sudo chmod 400 privkey
 
-sudo apt-get install haveged
+sudo apt -qq install -y haveged
