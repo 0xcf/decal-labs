@@ -15,7 +15,7 @@ gpg --homedir "$GPGDIR" --import "$PRIVKEY"
 
 decrypt() { gpg --homedir "$GPGDIR" -d --output "$1"; }
 
-cat <<EOF | decrypt file3.txt && chmod 400 file3.txt && chown nobody:root file3.txt
+cat <<EOF | decrypt file3.txt && chmod 404 file3.txt && chown nobody file3.txt
 -----BEGIN PGP MESSAGE-----
 
 hQEMA4OtrdUhwdONAQf/aDZDUjqaKzrE+AWN8tsIuON5QieEAYrPsJthHjOQffPy
@@ -30,7 +30,7 @@ nfxGMF4VgY7Rhmmhim/cOFAt0PZxfZhQ0D8Lh4NLLPt+UX1IkYGrajuGqnO+OmDP
 -----END PGP MESSAGE-----
 EOF
 
-cat <<EOF | decrypt file4.txt && chmod 400 file4.txt && chown nobody:root file4.txt
+cat <<EOF | decrypt file4.txt && chmod 644 file4.txt && chown nobody file4.txt
 -----BEGIN PGP MESSAGE-----
 
 hQEMA4OtrdUhwdONAQf/RVxPPgoUtb28zqGN8DRzbTWHbFlCMdEQWv2XvyPuPCHb
@@ -45,7 +45,7 @@ zRJ/NOQFVjM5wgW1+Fac4oBJQh2CzL4SN611jlt0Lk6q2AGQJrjzE5YBuqsKdXP+
 -----END PGP MESSAGE-----
 EOF
 
-cat <<EOF | decrypt file6.txt && chmod 400 file6.txt && chown nobody:root file6.txt
+cat <<EOF | decrypt file6.txt && chmod 400 file6.txt && chown nobody file6.txt
 -----BEGIN PGP MESSAGE-----
 
 hQEMA4OtrdUhwdONAQgAyg67Yc+u6Yo4vFUZUTbTVfrVKoVZmtzy4yM6KxN1D7QQ
@@ -60,7 +60,7 @@ m2eGxZIUX5H1/WtZkA3wa2Q=
 -----END PGP MESSAGE-----
 EOF
 
-cat <<EOF | decrypt file7.txt && chmod 400 file7.txt && chown nobody:root file7.txt
+cat <<EOF | decrypt file7.txt && chmod 400 file7.txt && chown nobody file7.txt
 -----BEGIN PGP MESSAGE-----
 
 hQEMA4OtrdUhwdONAQgAqm2KqrXmMBdocdEfRGGzeIcp+LIv5LNx2JGgDFg/tjTc
@@ -75,7 +75,7 @@ sjw+rdPdv9T10xRoQwI5B3k=
 -----END PGP MESSAGE-----
 EOF
 
-cat <<EOF | decrypt file8.txt && chmod 400 file8.txt && chown nobody:root file8.txt
+cat <<EOF | decrypt file8.txt && chmod 777 file8.txt && chown nobody file8.txt
 -----BEGIN PGP MESSAGE-----
 
 hQEMA4OtrdUhwdONAQgAmmxviNnMBnBWqoO9VVDKYtu3s3XCLtvQQ0NroHNOXY2G
@@ -90,7 +90,7 @@ hQzkVU7TNNDUm3uc1Mf9Ig==
 -----END PGP MESSAGE-----
 EOF
 
-cat <<EOF | decrypt file9.txt && chmod 400 file9.txt && chown nobody:root file9.txt
+cat <<EOF | decrypt file9.txt && chmod 777 file9.txt && chown nobody file9.txt
 -----BEGIN PGP MESSAGE-----
 
 hQEMA4OtrdUhwdONAQf/TFBgE43nYVP+bvzsVWLHk9ZR+GYjySQVKu9sQtHN/MbK
