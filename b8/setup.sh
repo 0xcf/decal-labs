@@ -15,36 +15,6 @@ gpg --homedir "$GPGDIR" --import "$PRIVKEY"
 
 decrypt() { gpg --homedir "$GPGDIR" -d --output "$1"; }
 
-cat <<EOF | decrypt file1.txt && chmod 400 file1.txt && chown nobody:root file1.txt
------BEGIN PGP MESSAGE-----
-
-hQEMA4OtrdUhwdONAQgAtLbceu5GmJVbYS06oOrpd3KsVFatMoQPTupdwdodjQLc
-BAD4XflhNe3LMVDxVB1sw9f7ru5l9vMoqtmbi09lvQoQhDvrDuV3IrVgBoTYlDjc
-gNxS/Ol1JUEGUJB+OZq7df2htvOPR6O4KQTRNtVcLTxI4Ev5st1J5bFmW2ak/5gR
-dbqR7Kuj8VCuRIssrYbOGtlUudaR92y9vFLI1Bfabb3v8S+nNnp3xoc37vzcEPUN
-LLLdU3gYHp30qUpuibiDGdO4wEjN3x+EtVzMLmH4RyBmBTqfqHqLOPLloFl9wShL
-FAp5o+i/IOyDO265o+O8ZOJ0CLYLUi6I3bRk3cgDpdJBAbjb21tU0HcYuFXGvF6L
-PFSgk9RFqXDhzrhd//PVEJbwktBev2olRSguRpgQjQa1JAKiZrc3xOB7JkX9lxPx
-1Ws=
-=G6TZ
------END PGP MESSAGE-----
-EOF
-
-cat <<EOF | decrypt file2.txt && chmod 400 file2.txt && chown nobody:root file1.txt
------BEGIN PGP MESSAGE-----
-
-hQEMA4OtrdUhwdONAQf+I73evNWg0+XAA6kc8i4E4hSKCeHM955ziXbKMTWEhC8w
-6L5NJHO7n8ea2aj3cjyope8Q9qU5B/8VVN3Cb1724g6iAGNu6JKDIZ9gs8QhbKNR
-r4ck6J80mJnNQtmRanxgkV0OZmNQ5+5GdA+pfyM5RO5BUoM4hT3Di5Tbqh71a802
-/5Y6I3ATkSgSiTYtnlqtl2XSZnnLAlCO+z+/XbLEKhjRxxKD7kBCRxdrYJvBfAEF
-LP+kMlEzfbrMLiW+01bXnq3QFQxj4KVHAoIKi9WFX7ZqyXI+rHyA5nxk9QmTtdA/
-yra99fSxKrY52GVF633j/I/ATSH0mxoFTxixKkPKTdJAAfyIK9eCzRL/DXCEwuDs
-XKtgA/xO/CzbAGcc64o0HB7mfxDvTS95Xk7IoNlGruX/LuDjf+lv0Zpc/vOkxuiK
-IA==
-=udvH
------END PGP MESSAGE-----
-EOF
-
 cat <<EOF | decrypt file3.txt && chmod 400 file3.txt && chown nobody:root file3.txt
 -----BEGIN PGP MESSAGE-----
 
