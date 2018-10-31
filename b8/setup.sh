@@ -1,11 +1,4 @@
 #!/bin/bash
-sudo apt -qq install -y haveged
-
-sudo chown nobody file1.txt.gpg
-sudo chmod 400 file1.txt.gpg
-sudo chown nobody file2.txt.gpg
-sudo chmod 400 file2.txt.gpg
-
 echo ocfdecal| gpg -o file3.txt --decrypt file3.txt.gpg
 sudo chown nobody file3.txt
 sudo chmod 404 file3.txt
@@ -27,6 +20,3 @@ sudo chmod 777 file8.txt
 echo ocfdecal| gpg -o file9.txt --decrypt file9.txt.gpg
 sudo chown nobody file9.txt
 sudo chmod 777 file9.txt
-
-sudo chown nobody privkey
-sudo chmod 400 privkey
