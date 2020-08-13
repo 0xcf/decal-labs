@@ -7,21 +7,21 @@ MAX_SIDES = 20
 def main():
 
     parser = argparse.ArgumentParser()
-    
+
     parser.add_argument(
-        dest="object", 
+        dest="object",
         choices=["coin", "dice"],
         help="Use 'coin' to flip a coin or 'dice' to roll a die"
     )
-    
+
     parser.add_argument(
-        "-i", "--iterations", 
+        "-i", "--iterations",
         dest="iterations",
         type=int,
         default=1,
         help="Number of times to flip a coin or roll dice (max=100)"
     )
-    
+
     # COMMIT 1: Add -s flag for number of sides on a die
 
 
@@ -59,7 +59,7 @@ def roll_dice(iterations, sides):
 
     # COMMIT 3: Restrict input range for dice iterations and sides
 
-    
+
     # COMMIT 2: Add dice rolling logic and output dice sum and sequence
 
 
