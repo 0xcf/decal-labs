@@ -1,0 +1,22 @@
+---
+- hosts: all
+  tasks:
+    - name: Install packages for this assignment
+      apt:
+        name: "{{ item }}"
+        state: present
+      with_items:
+        - traceroute
+        - python3-pip
+        - dnsmasq
+        - mtr
+        - vim
+        - git
+    - name: Export sbin paths for vagrant user
+      lineinfile:
+        dest: /etc/profile
+        line: export PATH=$PATH:/usr/local/sbin:/usr/sbin:/sbin 
+    - name: Clone the labs repo
+      git:
+        repo: https://github.com/0xcf/decal-labs.git
+        dest: /home/vagrant/decal-labs
