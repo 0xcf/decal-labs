@@ -2,7 +2,7 @@ class hacked::hacking {
     
     # Section 1: Install packages needed for the script
     # Packages to install: figlet, lolcat, jp2a
-    # https://puppet.com/docs/puppet/4.8/types/package.html
+    # https://puppet.com/docs/puppet/6.19/types/package.html 
 
     # ** YOUR CODE HERE **
 
@@ -16,7 +16,7 @@ class hacked::hacking {
     # Make sure file permissions let you read/run the script and image!
     # Make sure this *requires* the packages from Section 1, and ensure the script *requires* pwned.jpg
     # (i.e. Section 2 depends on Section 1, and the script requires pwned.jpg)
-    # https://puppet.com/docs/puppet/4.8/types/file.html
+    # https://puppet.com/docs/puppet/6.19/types/file.html
 
     # ** YOUR CODE HERE **
 
@@ -28,7 +28,7 @@ class hacked::hacking {
     # Run hack_everything every 30 minutes and append its output to a file $HOME/hackzored.txt
     # Make sure to use full paths
     # Make sure this *requires* the files from Section 2
-    # https://puppet.com/docs/puppet/4.8/types/cron.html
+    # https://puppet.com/docs/puppet/6.19/types/cron.html
 
     # ** YOUR CODE HERE **
 
