@@ -28,7 +28,7 @@ class hacked::hacking {
     # Run hack_everything every 30 minutes and append its output to a file $HOME/hackzored.txt
     # Make sure to use full paths
     # Make sure this *requires* the files from Section 2
-    # https://puppet.com/docs/puppet/6.19/types/cron.html
+    # https://puppet.com/docs/puppet/5.5/types/cron.html
 
     # ** YOUR CODE HERE **
 
