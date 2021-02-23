@@ -19,6 +19,9 @@ def main():
             print("phonebook is empty")
         else:
             # YOUR CODE HERE #
+    
+    elif sys.argv[1] == "lookup":
+        # YOUR CODE HERE #
 
     elif sys.argv[1] == "remove":
         name = " ".join(sys.argv[2:])
