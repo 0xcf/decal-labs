@@ -16,6 +16,9 @@ elif [ "$1" = "list" ]; then
         # YOUR CODE HERE #
     fi
 
+elif [ "$1" = "lookup" ]; then
+    # YOUR CODE HERE #
+
 elif [ "$1" = "remove" ]; then
     # YOUR CODE HERE #
 
