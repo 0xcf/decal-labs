@@ -34,4 +34,21 @@ class hacked::hacking {
 
 
 
+    # Section 4: Feedback (OPTIONAL): Leave your feedback in the comments below!
+    # ##############################
+    # Q1: How long did this lab take for you to complete? (# of hours)
+    # Answer1: 
+    #
+    # Q2: How was the difficulty of the lab? (too easy / slightly easy / just right / slightly difficult / too difficult)
+    # Answer2:
+    #
+    # Q3: Any thoughts about the autograder?
+    # Answer3:
+    #
+    # Q4: Any suggestions for improving this lab?
+    # Answer4:
+    #
+    # Q5: Anything else you want to tell us?
+    # Answer5:
+    # ###############################
 }
