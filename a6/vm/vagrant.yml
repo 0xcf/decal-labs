@@ -3,15 +3,14 @@
   tasks:
     - name: Install packages for this assignment
       apt:
-        name: "{{ item }}"
-        state: present
-      with_items:
-        - traceroute
-        - python3-pip
-        - dnsmasq
-        - mtr
-        - vim
-        - git
+      become: yes
+        pkg:
+          - traceroute
+          - python3-pip
+          - dnsmasq
+          - mtr
+          - vim
+          - git
     - name: Export sbin paths for vagrant user
       lineinfile:
         dest: /etc/profile
