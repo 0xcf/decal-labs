@@ -1,2 +1,2 @@
 # decal-labs
-Lab Material for the OCF [Linux SysAdmin DeCal](decal.ocf.berkeley.edu)
+Lab Material for the OCF [Linux SysAdmin DeCal](https://decal.ocf.berkeley.edu)
